@@ -126,6 +126,7 @@ endif
 LOCAL_STATIC_LIBRARIES := \
         libstagefright_color_conversion \
         libyuv_static \
+        libstagefright_aacenc \
         libstagefright_matroska \
         libstagefright_mediafilter \
         libstagefright_webm \
