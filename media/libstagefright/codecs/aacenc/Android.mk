@@ -75,8 +75,8 @@ LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/basic_op
 
 LOCAL_CFLAGS += -Werror
-LOCAL_CLANG := true
-LOCAL_SANITIZE := signed-integer-overflow unsigned-integer-overflow
+LOCAL_CLANG := false
+#LOCAL_SANITIZE := signed-integer-overflow unsigned-integer-overflow
 
 include $(BUILD_STATIC_LIBRARY)
 
@@ -129,8 +129,8 @@ else # visualon
   LOCAL_CFLAGS := -DOSCL_IMPORT_REF=
 
   LOCAL_CFLAGS += -Werror
-  LOCAL_CLANG := true
-  LOCAL_SANITIZE := signed-integer-overflow unsigned-integer-overflow
+  LOCAL_CLANG := false
+#  LOCAL_SANITIZE := signed-integer-overflow unsigned-integer-overflow
 
   LOCAL_STATIC_LIBRARIES := \
           libstagefright_aacenc
